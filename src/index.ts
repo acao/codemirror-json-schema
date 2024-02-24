@@ -1,27 +1,27 @@
-export { jsonCompletion } from "./json-completion.js";
+export { jsonCompletion } from "./features/completion";
 
 export {
   jsonSchemaLinter,
   type JSONValidationOptions,
   handleRefresh,
-} from "./json-validation.js";
+} from "./features/validation";
 
 export {
   jsonSchemaHover,
   type HoverOptions,
   type FoundCursorData,
   type CursorData,
-} from "./json-hover.js";
+} from "./features/hover";
 
-export { jsonSchema } from "./bundled.js";
+export { jsonSchema } from "./json/bundled";
 
 export type {
   JSONPointersMap,
   JSONPointerData,
   JSONPartialPointerData,
-} from "./types.js";
+} from "./types";
 
-export * from "./utils/parseJSONDocument.js";
-export * from "./utils/jsonPointers.js";
+export * from "./utils/parse-json-document";
+export * from "./utils/json-pointers";
 
-export * from "./state.js";
+export * from "./features/state";
